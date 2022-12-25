@@ -16,10 +16,7 @@ class GroceryScreen extends GetView<GroceryController> {
   @override
   Widget build(BuildContext context) {
 
-    return Scaffold(
-      backgroundColor: AppColors.homeBackgroundColor,
-      body: buildBody(context)
-    );
+    return buildBody(context);
   }
 
   Widget buildBody(context){

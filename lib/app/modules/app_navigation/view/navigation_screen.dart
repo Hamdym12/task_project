@@ -19,6 +19,7 @@ class NavigationScreen extends StatelessWidget {
     return GetBuilder<NavigationController>(
       init: NavigationController(),
         builder: (controller) => Scaffold(
+          backgroundColor: AppColors.homeBackgroundColor,
               body: SafeArea(
                 left: false,
                 right: false,
