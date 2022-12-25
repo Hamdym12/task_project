@@ -12,9 +12,7 @@ class CartScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final RxMap<dynamic, dynamic> newProducts = controller.products;
-    return Scaffold(
-      backgroundColor: AppColors.homeBackgroundColor,
-      body: LayoutBuilder(
+    return LayoutBuilder(
         builder: (ctx,constraints)=> Padding(
           padding: const EdgeInsets.symmetric(horizontal: 10),
           child: SizedBox(
@@ -73,7 +71,6 @@ class CartScreen extends StatelessWidget {
             ),
           ),
         ),
-      ),
     );
   }
 

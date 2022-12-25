@@ -9,8 +9,7 @@ class FavoriteScreen extends StatelessWidget {
   final  controller = Get.put(GroceryController());
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body:
+    return
        LayoutBuilder(
         builder: (ctx,constraints)=> Padding(
           padding: const EdgeInsets.symmetric(horizontal: 20),
@@ -55,7 +54,6 @@ class FavoriteScreen extends StatelessWidget {
             ),
           ),
         ),
-      )
     );
   }
 }
